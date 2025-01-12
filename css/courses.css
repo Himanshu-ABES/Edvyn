@@ -168,8 +168,9 @@ body {
 }
 
 hr {
-    width: 80%; /* Adjust the width as needed */
+    width: 85%; /* Adjust the width as needed */
     margin: 0 auto; /* Center the hr element */
+    margin: 45px;
     height: 1px; /* Adjust the height to reduce thickness */
     background-color: #E6E6E6;
     border: none; /* Remove the default border */
@@ -226,7 +227,7 @@ footer {
 /* For mobile devices (max-width: 767px) */
 @media (max-width: 767px) {
     .navbar {
-        padding: 0 1.5rem;
+        padding: 0 1.5rem; /* Reduce navbar padding */
     }
 
     .navbar .nav-items {
@@ -239,10 +240,12 @@ footer {
 
     .content {
         padding-top: 6rem; /* Adjust padding for smaller screens */
+        padding-left: 1rem; /* Reduce left margin */
+        padding-right: 1rem; /* Reduce right margin */
     }
 
     .course-summary {
-        margin: 20px 30px;
+        margin: 25px 45px; /* Reduce margins for course-summary */
         flex-direction: column; /* Stack the heading and paragraph */
     }
 
@@ -252,7 +255,21 @@ footer {
     }
 
     .course-summary .paragraph {
-        margin-bottom: 20px;
+        margin: 0; /* Remove default margin */
+        margin-bottom: 20px; /* Space between paragraphs */
+        font-size: 16px; /* Adjust font size if necessary */
+        line-height: 1.6;
+        text-align: justify; /* Align the paragraph text */
+    }
+
+    .course-summary .skills {
+        width: 100%; /* Ensure skills take up full width */
+    }
+
+    .course-summary .skills p {
+        font-size: 18px; /* Reduce font size for better readability */
+        margin-bottom: 10px; /* Ensure there's space between skills */
+        word-wrap: break-word; /* Force skills to wrap to next line */
     }
 
     .footer-content {
@@ -263,28 +280,5 @@ footer {
     .left-content a, .right-content a {
         font-size: 0.85em;
         margin-bottom: 10px;
-    }
-}
-
-/* For tablets (max-width: 1024px) */
-@media (max-width: 1024px) {
-    .navbar {
-        padding: 0 2rem;
-    }
-
-    .content {
-        padding-top: 8rem;
-    }
-
-    .course-summary {
-        margin: 50px 80px;
-    }
-
-    .course-summary .heading h3 {
-        font-size: 24px;
-    }
-
-    .course-summary .skills p {
-        font-size: 20px;
     }
 }
