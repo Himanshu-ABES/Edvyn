@@ -170,7 +170,6 @@ body {
 hr {
     width: 85%; /* Adjust the width as needed */
     margin: 0 auto; /* Center the hr element */
-    margin: 45px;
     height: 1px; /* Adjust the height to reduce thickness */
     background-color: #E6E6E6;
     border: none; /* Remove the default border */
@@ -267,7 +266,7 @@ footer {
     }
 
     .course-summary .skills p {
-        font-size: 18px; /* Reduce font size for better readability */
+        font-size: 16px; /* Reduce font size for better readability */
         margin-bottom: 10px; /* Ensure there's space between skills */
         word-wrap: break-word; /* Force skills to wrap to next line */
     }
