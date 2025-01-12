@@ -1,3 +1,4 @@
+/* Base Styles (No Changes Made) */
 * {
     margin: 0;
     padding: 0;
@@ -93,6 +94,7 @@ body {
     justify-content: center;
     gap: 37.28px; /* 2.33rem */
     padding-top: 160px; /* 10rem */
+    margin: 0 16px;
 }
 
 .card {
@@ -128,7 +130,7 @@ body {
     font-weight: 400;
 }
 
-/* Add this CSS to style the footer */
+/* Footer Styling */
 footer {
   background-color: transparent; /* Change as needed */
   padding: 16px 32px; /* 10px 20px */
@@ -154,4 +156,36 @@ footer {
 
 .right-content a:hover {
   color: #E6E6E6;
+}
+
+/* Responsive Media Queries */
+
+/* Tablets (Screens 768px and larger) */
+@media (max-width: 1024px) {
+    .card {
+        max-width: calc(50% - 48px); /* 50% width for cards */
+    }
+
+    .navbar .nav-items {
+        gap: 30px; /* Adjust spacing for tablet */
+    }
+}
+
+/* Mobile Phones (Screens 768px and smaller) */
+@media (max-width: 768px) {
+    .navbar .nav-items {
+        display: none; /* Hide nav items for mobile */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show hamburger menu */
+    }
+
+    .card {
+        max-width: calc(100% - 32px); /* Full width for cards */
+    }
+
+    .content {
+        gap: 16px; /* Reduce card spacing for smaller screens */
+    }
 }
