@@ -29,8 +29,8 @@ body {
 }
 
 .logo img {
-    margin-top: 2rem; /* 38.4px */
-    width: 5rem; /* 40px */
+    margin-top: 2rem;
+    width: 5rem;
     height: auto;
 }
 
@@ -39,18 +39,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2.7rem; /* 43.2px */
+    padding: 0 2.7rem;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* Ensure it stays above other content */
+    z-index: 1000;
 }
 
 .navbar a {
     color: #E6E6E6;
     text-align: center;
     text-decoration: none;
-    font-size: 0.9375rem; /* 15px */
+    font-size: 0.9375rem;
 }
 
 .navbar a:hover {
@@ -63,68 +63,192 @@ body {
 
 .navbar .nav-items {
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(0.3125rem); /* 5px */
-    padding: 0.625rem 1.25rem; /* 10px 20px */
+    backdrop-filter: blur(0.3125rem);
+    padding: 0.625rem 1.25rem;
     display: flex;
-    gap: 3.125rem; /* 50px */
-    border-radius: 0.875rem; /* 14px */
+    gap: 3.125rem;
+    border-radius: 0.875rem;
 }
 
 .hamburger-menu {
-    margin-top: 1.25rem; /* 20px */
+    margin-top: 1.25rem;
     display: none;
-    font-size: 1.125rem; /* 18px */
+    font-size: 1.125rem;
     cursor: pointer;
     color: #E6E6E6;
-    width: 3.25rem; /* 52px */
-    height: 3.25rem; /* 52px */
+    width: 3.25rem;
+    height: 3.25rem;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem; /* 12px */
-    border-radius: 0.875rem; /* 14px */
+    padding: 0.75rem;
+    border-radius: 0.875rem;
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(0.3125rem); /* 5px */
+    backdrop-filter: blur(0.3125rem);
 }
 
-
-
-/* Add this CSS to style the footer */
 footer {
-  background-color: transparent; /* Change as needed */
-  padding: 10px 20px;
+    background-color: transparent;
+    padding: 10px 20px;
 }
 
 .footer-content {
-  width: 100%;
-  padding: 1em 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    width: 100%;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .left-content a, .right-content a {
-  font-size: 0.75em;
-  text-decoration: none;
-  color: #E6E6E699; /* Change as needed */
+    font-size: 0.75em;
+    text-decoration: none;
+    color: #E6E6E699;
 }
 
 .left-content a:hover {
-  color: #E6E6E6;
+    color: #E6E6E6;
 }
 
 .right-content a:hover {
-  color: #E6E6E6;
+    color: #E6E6E6;
 }
 
 .main-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
 }
 
 .centered-title {
     text-align: center;
     color: #E6E6E6;
     font-size: 58px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    .navbar {
+        padding: 0 1rem; /* Adjust padding */
+    }
+
+    .logo img {
+        width: 4rem; /* Smaller logo */
+        margin-top: 1rem;
+    }
+
+    .navbar .nav-items {
+        gap: 2rem; /* Reduced gap */
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar a {
+        font-size: 0.875rem; /* Smaller font size */
+    }
+
+    .main-content {
+        padding: 50px 20px; /* Adjusted padding */
+    }
+
+    .centered-title {
+        font-size: 36px; /* Smaller title font */
+    }
+
+    footer .footer-content {
+        flex-direction: column; /* Stack footer links vertically */
+        text-align: center;
+    }
+
+    .footer-content a {
+        margin: 5px 0;
+    }
+}
+
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
+    .navbar {
+        padding: 0 2rem;
+    }
+
+    .logo img {
+        width: 4.5rem; /* Adjusted logo size */
+        margin-top: 1.5rem;
+    }
+
+    .navbar .nav-items {
+        gap: 2.5rem; /* Adjusted gap */
+        padding: 0.6rem 1.2rem;
+    }
+
+    .navbar a {
+        font-size: 1rem; /* Slightly larger font size */
+    }
+
+    .main-content {
+        padding: 60px 30px; /* Adjusted padding */
+    }
+
+    .centered-title {
+        font-size: 48px; /* Adjusted title font */
+    }
+
+    footer .footer-content {
+        flex-direction: column; /* Stack footer links vertically */
+        text-align: center;
+    }
+
+    .footer-content a {
+        margin: 10px 0;
+    }
+}
+
+/* Larger tablets (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+
+    .navbar {
+        padding: 0 3rem;
+    }
+
+    .logo img {
+        width: 5rem; /* Original logo size */
+        margin-top: 2rem;
+    }
+
+    .navbar .nav-items {
+        gap: 3rem; /* Adjusted gap */
+        padding: 0.7rem 1.5rem;
+    }
+
+    .navbar a {
+        font-size: 1.1rem; /* Slightly larger font size */
+    }
+
+    .main-content {
+        padding: 80px 40px; /* Adjusted padding */
+    }
+
+    .centered-title {
+        font-size: 56px; /* Adjusted title font */
+    }
+
+    footer .footer-content {
+        flex-direction: row; /* Keep footer links horizontally aligned */
+    }
+
+    .footer-content a {
+        margin: 0 10px;
+    }
 }
