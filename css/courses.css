@@ -1,3 +1,5 @@
+/* General styles remain the same */
+
 * {
     margin: 0;
     padding: 0;
@@ -217,4 +219,72 @@ footer {
 
 .right-content a:hover {
     color: #E6E6E6;
+}
+
+/* Responsive Design */
+
+/* For mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+    .navbar {
+        padding: 0 1.5rem;
+    }
+
+    .navbar .nav-items {
+        display: none; /* Hide navbar items */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu */
+    }
+
+    .content {
+        padding-top: 6rem; /* Adjust padding for smaller screens */
+    }
+
+    .course-summary {
+        margin: 20px 30px;
+        flex-direction: column; /* Stack the heading and paragraph */
+    }
+
+    .course-summary .heading {
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+
+    .course-summary .paragraph {
+        margin-bottom: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack footer items */
+        text-align: center;
+    }
+
+    .left-content a, .right-content a {
+        font-size: 0.85em;
+        margin-bottom: 10px;
+    }
+}
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 0 2rem;
+    }
+
+    .content {
+        padding-top: 8rem;
+    }
+
+    .course-summary {
+        margin: 50px 80px;
+    }
+
+    .course-summary .heading h3 {
+        font-size: 24px;
+    }
+
+    .course-summary .skills p {
+        font-size: 20px;
+    }
 }
