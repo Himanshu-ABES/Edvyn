@@ -223,8 +223,8 @@ footer {
 
 /* Responsive Design */
 
-/* For mobile devices (max-width: 767px) */
-@media (max-width: 767px) {
+/* Mobile Phones*/
+@media (max-width: 768px) {
     .navbar {
         padding: 0 1.5rem; /* Reduce navbar padding */
     }
@@ -244,19 +244,19 @@ footer {
     }
 
     .course-summary {
-        margin: 25px 45px; /* Reduce margins for course-summary */
+        margin: 25px 40px; /* Reduce margins for course-summary */
         flex-direction: column; /* Stack the heading and paragraph */
     }
 
     .course-summary .heading {
         margin-bottom: 20px;
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .course-summary .paragraph {
         margin: 0; /* Remove default margin */
         margin-bottom: 20px; /* Space between paragraphs */
-        font-size: 16px; /* Adjust font size if necessary */
+        font-size: 14px; /* Adjust font size if necessary */
         line-height: 1.6;
         text-align: justify; /* Align the paragraph text */
     }

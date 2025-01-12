@@ -160,7 +160,7 @@ footer {
 
 /* Responsive Media Queries */
 
-/* Tablets (Screens 768px and larger) */
+/* Tablets*/
 @media (max-width: 1024px) {
     .card {
         max-width: calc(50% - 48px); /* 50% width for cards */
@@ -171,7 +171,7 @@ footer {
     }
 }
 
-/* Mobile Phones (Screens 768px and smaller) */
+/* Mobile Phones*/
 @media (max-width: 768px) {
     .navbar .nav-items {
         display: none; /* Hide nav items for mobile */

@@ -128,50 +128,49 @@ footer {
 
 /* Media Queries for Responsiveness */
 
-/* Mobile devices (up to 480px) */
-@media (max-width: 480px) {
+/* Tablets*/
+@media (max-width: 1024px) {
     html {
-        font-size: 14px; /* Adjust font size for mobile */
+        font-size: 16px;
     }
 
     .navbar {
-        padding: 0 1rem; /* Adjust padding */
+        padding: 0 3rem;
     }
 
     .logo img {
-        width: 4rem; /* Smaller logo */
-        margin-top: 1rem;
+        width: 5rem; /* Original logo size */
+        margin-top: 2rem;
     }
 
     .navbar .nav-items {
-        gap: 2rem; /* Reduced gap */
-        padding: 0.5rem 1rem;
+        gap: 3rem; /* Adjusted gap */
+        padding: 0.7rem 1.5rem;
     }
 
     .navbar a {
-        font-size: 0.875rem; /* Smaller font size */
+        font-size: 1.1rem; /* Slightly larger font size */
     }
 
     .main-content {
-        padding: 50px 20px; /* Adjusted padding */
+        padding: 80px 40px; /* Adjusted padding */
     }
 
     .centered-title {
-        font-size: 36px; /* Smaller title font */
+        font-size: 56px; /* Adjusted title font */
     }
 
     footer .footer-content {
-        flex-direction: column; /* Stack footer links vertically */
-        text-align: center;
+        flex-direction: row; /* Keep footer links horizontally aligned */
     }
 
     .footer-content a {
-        margin: 5px 0;
+        margin: 0 10px;
     }
 }
 
-/* Tablets (481px to 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
+/* Mobile Phones*/
+@media (max-width: 768px) {
     html {
         font-size: 15px;
     }
@@ -209,46 +208,5 @@ footer {
 
     .footer-content a {
         margin: 10px 0;
-    }
-}
-
-/* Larger tablets (769px to 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    html {
-        font-size: 16px;
-    }
-
-    .navbar {
-        padding: 0 3rem;
-    }
-
-    .logo img {
-        width: 5rem; /* Original logo size */
-        margin-top: 2rem;
-    }
-
-    .navbar .nav-items {
-        gap: 3rem; /* Adjusted gap */
-        padding: 0.7rem 1.5rem;
-    }
-
-    .navbar a {
-        font-size: 1.1rem; /* Slightly larger font size */
-    }
-
-    .main-content {
-        padding: 80px 40px; /* Adjusted padding */
-    }
-
-    .centered-title {
-        font-size: 56px; /* Adjusted title font */
-    }
-
-    footer .footer-content {
-        flex-direction: row; /* Keep footer links horizontally aligned */
-    }
-
-    .footer-content a {
-        margin: 0 10px;
     }
 }

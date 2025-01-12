@@ -88,7 +88,7 @@ body {
 
 .main-content {
     margin: 0;
-    padding: 100px 135px; /* Adds top and side padding for proper placement */
+    padding: 60px 135px; /* Reduced padding */
     color: #E6E6E6;
     display: flex;
     flex-direction: column; /* Stacks h1 and h3 vertically */
@@ -117,11 +117,12 @@ body {
 .founder {
     margin: 0;
     height: 100vh;
-    padding: 100px 135px; /* Ensures consistent spacing from edges */
+    padding: 60px 135px; /* Reduced padding */
     color: #E6E6E6;
     display: flex;
     flex-direction: column; /* Stacks h3, h1, and the image vertically */
     justify-content: center; /* Centers the content vertically */
+    align-items: flex-start;
     min-height: 100vh; /* Occupies the full height of the viewport */
     text-align: left; /* Centers text inside the section */
 }
@@ -152,8 +153,6 @@ body {
     height: auto; /* Adjusts the height of the image */
     object-fit: cover; /* Ensures the image scales properly */
 }
-
-
 
 .mission {
     margin: 70px 135px;
@@ -189,6 +188,7 @@ body {
     font-size: 16px;
     text-align: left; /* Ensures all paragraphs are left-aligned */
 }
+
 .mission .paragraph h2 {
     margin-bottom: 15px;
     line-height: 1.6;
@@ -197,39 +197,40 @@ body {
 }
 
 hr {
-    width: 80%; /* Adjust the width as needed */
+    width: 85%; /* Adjust the width as needed */
     margin: 0 auto; /* Center the hr element */
-    margin-bottom: 200px;
+    margin-bottom: 40px; /* Reduced bottom margin */
     height: 1px; /* Adjust the height to reduce thickness */
     background-color: #E6E6E6;
     border: none; /* Remove the default border */
 }
 
-
-/* Add this CSS to style the footer */
 footer {
-  background-color: transparent; /* Change as needed */
-  padding: 10px 20px;
+    background-color: transparent; /* Change as needed */
+    padding: 10px 20px;
 }
 
 .footer-content {
-  width: 100%;
-  padding: 1em 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    width: 100%;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .left-content a, .right-content a {
-  font-size: 0.75em;
-  text-decoration: none;
-  color: #E6E6E699; /* Change as needed */
+    font-size: 0.75em;
+    text-decoration: none;
+    color: #E6E6E699; /* Change as needed */
 }
 
 .left-content a:hover {
-  color: #E6E6E6;
+    color: #E6E6E6;
 }
 
 .right-content a:hover {
-  color: #E6E6E6;
+    color: #E6E6E6;
 }
+
+/* Responsive Styles */
+
