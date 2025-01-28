@@ -1,3 +1,4 @@
+/* Base Styles (No Changes Made) */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,8 @@
 }
 
 html {
-    font-size: 1rem; /* 1rem = 16px */
+    font-size: 16px; /* 1rem = 16px */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -29,8 +31,8 @@ body {
 }
 
 .logo img {
-    margin-top: 2rem;
-    width: 5rem;
+    margin-top: 20px;
+    width: 80px;
     height: auto;
 }
 
@@ -39,18 +41,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2.7rem;
+    padding: 0 43.2px; /* 2.7rem */
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1000; /* Ensure it stays above other content */
 }
 
 .navbar a {
     color: #E6E6E6;
     text-align: center;
     text-decoration: none;
-    font-size: 0.9375rem;
+    font-size: 15px; /* 0.9375rem */
 }
 
 .navbar a:hover {
@@ -63,27 +65,68 @@ body {
 
 .navbar .nav-items {
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(0.3125rem);
-    padding: 0.625rem 1.25rem;
+    backdrop-filter: blur(5px); /* 0.3125rem */
+    padding: 10px 20px; /* 0.625rem 1.25rem */
     display: flex;
-    gap: 3.125rem;
-    border-radius: 0.875rem;
+    gap: 50px; /* 3.125rem */
+    border-radius: 14px; /* 0.875rem */
+    align-items: center;
 }
 
 .hamburger-menu {
-    margin-top: 1.25rem;
+    margin-top: 20px; /* 1.25rem */
     display: none;
-    font-size: 1.125rem;
+    font-size: 18px; /* 1.125rem */
     cursor: pointer;
     color: #E6E6E6;
-    width: 3.25rem;
-    height: 3.25rem;
+    width: 46px; /* 3.25rem */
+    height: 46px; /* 3.25rem */
     align-items: center;
     justify-content: center;
-    padding: 0.75rem;
-    border-radius: 0.875rem;
+    padding: 12px; /* 0.75rem */
+    border-radius: 14px; /* 0.875rem */
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(0.3125rem);
+    backdrop-filter: blur(5px); /* 0.3125rem */
+}
+
+.popup-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-menu a {
+    color: #E6E6E6;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px; /* 1.5rem */
+    margin: 20px 0; /* 1.25rem 0 */
+}
+
+.popup-menu a:hover {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.popup-menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00ff2a, black);
+    transition: width 0.3s ease-in-out;
+}
+
+.popup-menu a:hover::after {
+    width: 100%;
 }
 
 footer {
@@ -139,8 +182,9 @@ footer {
     }
 
     .logo img {
-        width: 5rem; /* Original logo size */
-        margin-top: 2rem;
+        margin-top: 20px;
+        width: 65px; /* Original logo size */
+        height: auto;
     }
 
     .navbar .nav-items {
@@ -152,12 +196,20 @@ footer {
         font-size: 1.1rem; /* Slightly larger font size */
     }
 
+    .navbar .nav-items {
+        display: none; /* Hide navbar items */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show hamburger menu */
+    }
+
     .main-content {
         padding: 80px 40px; /* Adjusted padding */
     }
 
-    .centered-title {
-        font-size: 56px; /* Adjusted title font */
+    .main-content .centered-title {
+        font-size: 48px; /* Adjusted title font */
     }
 
     footer .footer-content {
@@ -180,8 +232,10 @@ footer {
     }
 
     .logo img {
-        width: 4.5rem; /* Adjusted logo size */
-        margin-top: 1.5rem;
+        margin-top: 20px;
+        width: 60px; /* Adjusted logo size */
+        height: auto;
+        
     }
 
     .navbar .nav-items {
@@ -193,12 +247,20 @@ footer {
         font-size: 1rem; /* Slightly larger font size */
     }
 
+    .navbar .nav-items {
+        display: none; /* Hide navbar items */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show hamburger menu */
+    }
+
     .main-content {
         padding: 60px 30px; /* Adjusted padding */
     }
 
-    .centered-title {
-        font-size: 48px; /* Adjusted title font */
+    .main-content .centered-title {
+        font-size: 36px; /* Adjusted title font */
     }
 
     footer .footer-content {
