@@ -180,7 +180,7 @@ body {
 .founder h3::before {
     content: "|"; /* Adds a vertical bar */
     font-weight: 100;
-    margin-right: 20px; /* Spacing between the bar and the text */
+    margin-right: 10px; /* Spacing between the bar and the text */
 }
 
 .founder h1 {
@@ -310,4 +310,69 @@ footer {
         display: flex; /* Show hamburger menu */
     }
 
+    .main-content {
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .main-content h1 {
+        font-size: 36px;
+        max-width: calc(100% - 60px);
+    }
+
+    .main-content h3 {
+        font-size: 20px;
+        max-width: calc(100% - 60px);
+    }
+
+    .founder h1 {
+        font-size: 36px;
+    }
+
+    .founder h3 {
+        font-size: 28px;
+    }
+
+    .founder img {
+        width: 100%;
+        height: auto;
+    }
+
+    .founder {
+        padding: 20px; /* Reduce padding */
+        text-align: center; /* Center text */
+        align-items: center; /* Center items */
+    }
+
+    .mission {
+        margin-top: 0;
+        flex-direction: column; /* Stacks the heading and paragraph vertically */
+        margin: 20px; /* Reduce margin */
+    }
+
+    .mission .heading {
+        margin-right: 0; /* Remove margin */
+        margin-bottom: 15px;
+    }
+
+    .mission .paragraph h2 {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .mission .paragraph p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer .right-content {
+        margin-top: 10px;
+    }
 }
