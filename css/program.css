@@ -203,6 +203,12 @@ footer {
 
 /* Tablets */
 @media (max-width: 1024px) {
+    .logo img {
+        margin-top: 20px; /* 38.4px */
+        width: 65px; /* 40px */
+        height: auto;
+    }
+
     .card {
         max-width: calc(50% - 48px); /* 50% width for cards */
     }
@@ -210,10 +216,24 @@ footer {
     .navbar .nav-items {
         gap: 30px; /* Adjust spacing for tablet */
     }
+
+    .navbar .nav-items {
+        display: none; /* Hide nav items for mobile */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show hamburger menu */
+    }
 }
 
 /* Mobile Phones */
 @media (max-width: 768px) {
+    .logo img {
+        margin-top: 20px; /* 38.4px */
+        width: 60px; /* 40px */
+        height: auto;
+    }
+
     .navbar .nav-items {
         display: none; /* Hide nav items for mobile */
     }

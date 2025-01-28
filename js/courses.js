@@ -80,3 +80,15 @@ gsap.from(".course-summary .skills p", {
         once: true
     }
 });
+
+// Hamburger menu functionality
+const hamburgerMenu = document.getElementById('hamburger-menu');
+const popupMenu = document.getElementById('popup-menu');
+
+hamburgerMenu.addEventListener('click', () => {
+    if (popupMenu.style.display === 'flex') {
+        popupMenu.style.display = 'none';
+    } else {
+        popupMenu.style.display = 'flex';
+    }
+});
