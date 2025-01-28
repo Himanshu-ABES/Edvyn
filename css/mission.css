@@ -323,12 +323,12 @@ footer {
     }
 
     .main-content h1 {
-        font-size: 36px;
+        font-size: 32px;
         max-width: calc(100% - 60px);
     }
 
     .main-content h3 {
-        font-size: 20px;
+        font-size: 18px;
         max-width: calc(100% - 60px);
     }
 
