@@ -42,4 +42,16 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: "power2.out",
         opacity: 0,
     });
+
+    // Hamburger menu functionality
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const popupMenu = document.getElementById('popup-menu');
+
+    hamburgerMenu.addEventListener('click', () => {
+        if (popupMenu.style.display === 'flex') {
+            popupMenu.style.display = 'none';
+        } else {
+            popupMenu.style.display = 'flex';
+        }
+    });
 });
