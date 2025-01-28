@@ -292,6 +292,12 @@ footer {
     .hamburger-menu {
         display: flex; /* Show hamburger menu */
     }
+
+    .founder {
+        padding: 20px; /* Reduce padding */
+        text-align: center; /* Center text */
+        align-items: center; /* Center items */
+    }
 }
 
 /* Mobile Phones */
