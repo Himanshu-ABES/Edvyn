@@ -181,7 +181,7 @@ body {
     margin: 0 0 20px 0; /* Reduces the left and right margin, adds space below each paragraph */
     line-height: 1.6;
     font-size: 16px;
-    text-align: left; /* Ensures all paragraphs are left-aligned */
+    text-align: justify; /* Ensures all paragraphs are left-aligned */
 }
 
 hr {
