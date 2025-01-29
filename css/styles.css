@@ -114,7 +114,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    margin-top: 12.5rem;
+    margin-top: 10.5rem;
 }
 
 .left h1 {
@@ -371,7 +371,6 @@ body {
     }
 
     .left p {
-        max-width: 400px;
         font-weight: 200;
         margin-top: 1rem;
         letter-spacing: 0.035rem;
